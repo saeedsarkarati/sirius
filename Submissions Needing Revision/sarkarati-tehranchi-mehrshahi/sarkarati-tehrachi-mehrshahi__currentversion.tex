@@ -5,6 +5,7 @@
 \usepackage{lineno,hyperref}
 \modulolinenumbers[5]
 \usepackage{lipsum}
+\usepackage{amsmath}
 
 
 
@@ -101,20 +102,20 @@ where $d_{ij}$ is the distance between centers of two segments.
 In literature, this approximation is used in a method called "surface charge simulation method"\cite {Zhou1993} although this method can be categorized in varieties of MOM. This formula is not useful for obtaining the self-coupling coefficient. Self-coupling is calculated by integrating over the area to find the mean distance of all the points of area to its center.
 \begin{equation}
 \label{eq4}
-P_{ii} = \frac 1 {S_i} \int \int \frac {dx\  dy}{4 \pi \epsilon_0 \sqrt{(x-x_{ci})^2 + (y-y_{ci})^2}}
+P_{ii} = \frac 1 {S_i} \int_{x \in S_i} \int_{y \in S_i} \frac {dx\  dy}{4 \pi \epsilon_0 \sqrt{(x-x_{ci})^2 + (y-y_{ci})^2}}
 \end{equation}
 Where $(x_{ci}, y_{ci})$ is the center point of domain i and $S_i $ is the segment area.
 For less approximate results in calculating the capacity, it is better to use a double integral formula, not only for the self-coupling but also for the mutual coupling. It leads us to double integral formulation.
 \begin{equation}
 \label{eq5}
-P_{ij} = \frac 1 {S_i}\int \int \frac {dx\  dy}{4 \pi \epsilon_0 \sqrt{(x-x_{cj})^2 + (y-y_{cj})^2+ z^2}}
+P_{ij} = \frac 1 {S_i}\int_{x \in S_i} \int_{y \in S_i} \frac {dx\  dy}{4 \pi \epsilon_0 \sqrt{(x-x_{cj})^2 + (y-y_{cj})^2+ z^2}}
 \end{equation}
 Two domains are assumed to be parallel. $z$ is the distance of two domains and is constant over integration. The integral must be calculated over domain i, and the distance of each point to the center of other domains is considered in this formula. These integrals can be calculated analytically and have been applied to find the capacitance of parallel plate capacitors by Nishiyama and Nakamura\cite {Nishiyama1994}.
 
 Obviously this formula is not suitable where two domains are relatively close according to their dimensions. In this case, the center of one domain can not be proposed as representative of all points. Really it is better to find all mutual distances between points of two segments. It can be done by using quadruple integral instead of double integral.
 \begin{equation}
 \label {eq6}
-P_{ij} = \frac 1 {S_i S_j}\int \int \int \int \frac{dx_i dy_i dx_j dy_j}{4 \pi \epsilon_0 d_{ij}}
+P_{ij} = \frac 1 {S_i S_j}\iint\limits_{x_i, y_i \in S_i}\ \  \iint\limits_{x_j, y_j \in S_j}  \frac{dx_i dy_i dx_j dy_j}{4 \pi \epsilon_0 d_{ij}}
 \end{equation} 
 where $d _{ij}$ is 
 \begin{equation}
@@ -132,14 +133,14 @@ To perform integral in Equation(6) this integral transformation can be used\cite
 And Equation(6) can be rewritten in this form.
 \begin{equation}
 \label {eq9}
-P_{ij} = \frac 2 {\sqrt{\pi} S_i S_j}\int_0^{\infty}\int \int \int \int \frac{e^{-u^2 d_{ij}^2 } dx_i dy_i dx_j dy_j}{4 \pi \epsilon_0 } du
+P_{ij} = \frac 2 {\sqrt{\pi} S_i S_j}\int_0^{\infty}\iint\limits_{x_i, y_i \in S_i}\ \  \iint\limits_{x_j, y_j \in S_j} \\ \frac{e^{-u^2 d_{ij}^2 } dx_i dy_i dx_j dy_j}{4 \pi \epsilon_0 } du
 \end{equation}
 
 For simplicity, we remove constants from the formula.
 
 \begin{equation}
 \label {eq10}
-I = \int_0^{\infty}\int \int \int \int e^{-u^2 d_{ij}^2} dx_i dy_i dx_j dy_j du
+I = \int_0^{\infty}\iint\limits_{x_i, y_i \in S_i}\ \  \iint\limits_{x_j, y_j \in S_j}  e^{-u^2 d_{ij}^2} dx_i dy_i dx_j dy_j du
 \end{equation}
 
 There is no way to find a primitive function of $e^{-u^2 d_{ij}^2}$ over these five integrals, but primitive function over four inner integrals can be found. Assume J as the primitive function of the quadruple integral.
