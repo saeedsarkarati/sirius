@@ -79,7 +79,7 @@ He divided the square by 36 equal squares and presumed uniform charge density fo
 \end{figure}
 He then calculated the electric charge of each segment and consequently electric capacitance of the big square.
 
-Generally to calculate the electric capacitance of a parallel plate capacitor, at first two constant voltages, are proposed for two plates (usually 1V and -1V). Now each plate must be divided into square segments. The electric potential of each segment must be equal to its plate. On the other hand potential of each segment can be calculated using the electric charge of all segments and coupling coefficients.
+Generally to calculate the electric capacitance of a parallel plate capacitor, at first two constant voltages, are proposed for two plates (usually 1V and -1V). Now each plate must be divided into square segments. Charge density of each segment is assumed to be constant for each segment. The electric potential of each segment must be equal to its plate. On the other hand potential of each segment can be calculated using the electric charge of all segments and coupling coefficients.
 \begin{equation}
 \label{eq1}
 V_i = \sum_j P_{ij} Q_j
@@ -124,7 +124,7 @@ d_{ij} = \sqrt{(x_i-x_j)^2 + (y_i-y_j)^2 + z^2}
 \end{equation} 
 %------------ S E C T I O N   T H R E E
 \section{Quadruple Integration for Parallel Rectangular Segments}
-To obtain coupling coefficients described in Eq(6) one can use the numerical integration method or solve it analytically. Although there are many improvements in numerical techniques, analytical solutions still have less process time. Firstly it has been done by Eibert and Hansen for triangular domains\cite{Eibert1995}. Analytical solution for rectangular domains presented by Lopez-Pena and Mosig \cite{Lopez2009}, with a small mistake in the derived formula. Recently this integral has been performed by Maccarrone and Paffuti\cite{Maccarrone2017}, and its result has been used to find capacitance and forces for two square electrodes.
+To obtain coupling coefficients described in Eq(6) one can use the numerical integration method or solve it analytically. Although there are many improvements in numerical techniques, analytical solutions still have less process time. Firstly it has been done by Eibert and Hansen for triangular domains\cite{Eibert1995}. Analytical solution for rectangular domains presented by Lopez-Pena and Mosig \cite{Lopez2009}, with a small mistake in the derived formula. Recently this integral has been performed by Maccarrone and Paffuti\cite{Maccarrone2017}, and its result has been used to find capacitance and forces for two square electrodes.These integrals have been calculated by Zhenfei Song et al \cite{Song2011} for calculating partial inductance.
 
 To perform integral in Equation(6) this integral transformation can be used\cite{Ciftja2010}.
 \begin{equation}\label {eq8}
@@ -148,85 +148,84 @@ There is no way to find a primitive function of $e^{-u^2 d_{ij}^2}$ over these f
 \label {eq11}
 J = \int \int \int \int e^{-u^2 d_{ij}^2 } dx_i dy_i dx_j dy_j  
 \end{equation}
-Then J can be calculated analytically.
-\begin{eqnarray}\label {eq12}
-\begin{array}{lll}
+Then J can be calculated analytically. It can be done by common mathematical softwares. The solution has been obtained by use of "Wolfram Alpha" \cite{Wolfram}.
 
-J = \frac{e^{-u^2(x^2+y^2+z^2)}}{4u^4}+\frac{\sqrt{\pi}e^{-u^2(y^2 + z^2)}x\; \mathrm{erf}(u x)}{4u^3}\\ \\
-+\frac{\sqrt{\pi}e^{-u^2(x^2 + z^2)}y\; \mathrm {erf}(u y)}{4u^3}+\frac{\pi e^{-u^2 z^2}x\;y\; \mathrm{erf}(u x)\; \mathrm{erf}(u y)}{4u^2}
-\end{array}
-\end{eqnarray}
+\begin{equation}\label {eq12}
+\begin{split}
+j = \frac{e^{-u^2(x^2+y^2+z^2)}}{4u^4} + \frac{\sqrt{\pi}e^{-u^2(y^2 + z^2)}x\; \mathrm{erf}(u x)}{4u^3} \\
++\frac{\sqrt{\pi}e^{-u^2(x^2 + z^2)}y \mathrm {erf}(u y)}{4u^3} + \frac{\pi e^{-u^2 z^2}x\;y\; \mathrm{erf}(u x)\; \mathrm{erf}(u y)}{4u^2}
+\end{split}
+\end{equation}
 Where $x = x_i - x_j$ , $y = y_i - y_j$ and $z = z_c$\ . 
 Now, these integrals must be calculated separately.
 \begin{equation}\label {eq13}
-\begin{array}{lll}
-
-I_1& = &\big[\int_0^{\infty}\frac{e^{-u^2(x^2+y^2+z^2)}}{4u^4}\big]_{D_0}^{D_1}\\
-I_2& = &\big[\int_0^{\infty}\frac{\sqrt{\pi}e^{-u^2(y^2 + z^2)}x\; \mathrm{erf}(u x)}{4u^3}\big]_{D_0}^{D_1}\\ 
-I_3& = &\big[\int_0^{\infty}\frac{\sqrt{\pi}e^{-u^2(x^2 + z^2)}y\; \mathrm {erf}(u y)}{4u^3}\big]_{D_0}^{D_1}\\
-I_4& = &\big[\int_0^{\infty}\frac{\pi e^{-u^2 z^2}x\;y\; \mathrm{erf}(u x)\; \mathrm{erf}(u y)}{4u^2}\big]_{D_0}^{D_1}
-\end{array}
+\begin{split}
+I_1\; = \;&\bigg[\int_0^{\infty}\frac{e^{-u^2(x^2+y^2+z^2)}} {4u^4}\bigg]_{D_0}^{D_1}\\
+I_2\; = \;&\bigg[\int_0^{\infty}\frac{\sqrt{\pi}e^{-u^2(y^2 + z^2)}x\; \mathrm{erf}(u x)}{4u^3}\bigg]_{D_0}^{D_1}\\
+I_3\; = \;&\bigg[\int_0^{\infty}\frac{\sqrt{\pi}e^{-u^2(x^2 + z^2)}y\; \mathrm {erf}(u y)}{4u^3}\bigg]_{D_0}^{D_1}\\
+I_4\; = \;&\bigg[\int_0^{\infty}\frac{\pi e^{-u^2 z^2}x\; y\; \mathrm{erf}(u x) \mathrm{erf}(u y)}{4u^2}\bigg]_{D_0}^{D_1}
+\end{split}
 \end{equation}
 
 We want to do calculations over rectangular segments. So the limits of integration are over two rectangles.
-\begin{eqnarray}\label {eq14}
-D_0:\;\;x_i=a_0, y_i = b_0,\ x_j = c_0,y_j = d_0\nonumber\\
+
+\begin{equation}\label {eq14}
+\begin{split}
+D_0:\;\;x_i=a_0, y_i = b_0,\ x_j = c_0,y_j = d_0\\
 D_1:\;\;x_i=a_1, y_i = b_1, \ x_j = c_1,y_j = d_1
-\end{eqnarray}
+\end{split}
+\end{equation}
 
 Finally, the answer can be calculated.
+
 \begin{equation}\label {eq15}
-\begin{array}{lll}
-
-I_1 = \sum_{i,j,k,l=0}^1 A_{i,j,k,l}\frac {\sqrt{\pi} } {6} (x^2+y^2+z^2)^{\frac 3 2}\\
-I_2 = \sum_{i,j,k,l=0}^1 -A_{i,j,k,l}\frac {\sqrt{\pi} } {4}\;x\ \times \\
-\left((y^2 + z^2) \;\mathrm{sinh^{-1}}(\frac{x}{\sqrt{y^2 + z^2}}) +x \sqrt{x^2 + y^2 + z^2}\right)\\ 
-I_3 = \sum_{i,j,k,l=0}^1 -A_{i,j,k,l}\frac {\sqrt{\pi} } {4}\;y\ \times \\
-\left((x^2 + z^2)\;\mathrm{sinh^{-1}}(\frac{y}{\sqrt{x^2 + z^2}}) +y \sqrt{x^2 + y^2 + z^2}\right) \\ 
-I_4 = \sum_{i,j,k,l=0}^1 A_{i,j,k,l}\frac {\sqrt{\pi} } {2}\;x\;y \left(x\;\mathrm{sinh^{-1}}(\frac{y}{\sqrt{x^2 + z^2}})+ \right.\\
-\left. y\;\mathrm{sinh^{-1}}(\frac{x}{\sqrt{y^2 + z^2}}) -z\;\mathrm{tan^{-1}}(\frac{x\;y}{z\;\sqrt{x^2+y^2 + z^2}}) \right)\\ 
-
-\end{array}
+\begin{split}
+I_1 = &\sum_{i,j,k,l=0}^1 A_{i,j,k,l}\frac {\sqrt{\pi} } {6} (x^2+y^2+z^2)^{\frac 3 2}\\
+I_2 = &\sum_{i,j,k,l=0}^1 -A_{i,j,k,l}\frac {\sqrt{\pi} } {4}\;x\ \times \\
+&\Bigg((y^2 + z^2) \;\mathrm{sinh^{-1}}(\frac{x}{\sqrt{y^2 + z^2}}) +x \sqrt{x^2 + y^2 + z^2}\Bigg)\\ 
+I_3 = &\sum_{i,j,k,l=0}^1 -A_{i,j,k,l}\frac {\sqrt{\pi} } {4}\;y\ \times \\
+&\Bigg((x^2 + z^2)\;\mathrm{sinh^{-1}}(\frac{y}{\sqrt{x^2 + z^2}}) +y \sqrt{x^2 + y^2 + z^2}\Bigg) \\ 
+I_4 = &\sum_{i,j,k,l=0}^1 A_{i,j,k,l}\frac {\sqrt{\pi} } {2}\;x\;y\; \Bigg(x\;\mathrm{sinh^{-1}}(\frac{y}{\sqrt{x^2 + z^2}})+ \\
+ &y\;\mathrm{sinh^{-1}}(\frac{x}{\sqrt{y^2 + z^2}}) -z\;\mathrm{tan^{-1}}(\frac{x\;y}{z\;\sqrt{x^2+y^2 + z^2}}) \Bigg)\\ 
+\end{split}
 \end{equation}
+
 In above expressions $x = a_i - c_j$ , $y = b_k - d_l\ $ and $z = z_c$. The amount of $A_{i,j,k,l}$ deponds on sum of i to l. If this summation is an odd number $A_{i,j,k,l}$ becomes -1, otherwise its value equals to 1.
 \begin{equation}\label{eq16}
 A_{i,j,k,l} = \Big\{^{\;\;1\quad  \mathrm{if}\; i + j + k + l\; \mathrm{is \;even}}_{-1\quad  \mathrm{if}\; i + j + k + l\; \mathrm{is \;odd}}
 \end{equation}
 
 Now it is needed to find the sum of $I_1$ to $I_4$.
+
 \begin{equation}\label {eq:17}
-\begin{array}{ll}
+\begin{split}
 I&=I_1+I_2+I_3+I_4 = \sum_{i,j,k,l=0}^1 A_{i,j,k,l}\\
-&  \bigg[ \frac {\sqrt{\pi} } {12} \left((-x^2-y^2+2\;z^2)\sqrt{x^2 + y^2 + z^2} \right) \\
-
-& \ +  \frac {\sqrt{\pi} } {4} \bigg( y(x^2 - z^2)\;\mathrm{sinh^{-1}}(\frac{y}{\sqrt{x^2 + z^2}}) \bigg)\\
-&\ +   \frac {\sqrt{\pi} } {4}\left( x(y^2-z^2)\;\mathrm{sinh^{-1}}(\frac{x}{\sqrt{y^2 + z^2}})  \right)\\ 
+&  \bigg[ \frac {\sqrt{\pi} } {12} \Big((-x^2-y^2+2\;z^2)\sqrt{x^2 + y^2 + z^2} \Big) \\
+& \ +  \frac {\sqrt{\pi} } {4} \Big( y(x^2 - z^2)\;\mathrm{sinh^{-1}}(\frac{y}{\sqrt{x^2 + z^2}}) \Big)\\
+&\ +   \frac {\sqrt{\pi} } {4}\Big( x(y^2-z^2)\;\mathrm{sinh^{-1}}(\frac{x}{\sqrt{y^2 + z^2}})  \Big)\\ 
 &\ -  \frac {\sqrt{\pi} } {2}x \;y\;z\;\mathrm{tan^{-1}}(\frac{x\;y}{z\;\sqrt{x^2+y^2 + z^2}})\bigg]
-
-\end{array}
+\end{split}
 \end{equation}
 
 As is known $"\mathrm{sinh^{-1}}(x) = \mathrm{ln}(x+\sqrt{x^2 + 1})"$,
 so the above formula can be rewritten in this form.
+
 \begin{equation}\label {eq:18}
-\begin{array}{ll}
-I&=\sum_{i,j,k,l=0}^1 A_{i,j,k,l}\left[\frac {\sqrt{\pi} } {12} \left((-x^2-y^2+2\;z^2)\sqrt{x^2 + y^2 + z^2} \right)\right.  \\
-
-& + \frac {\sqrt{\pi} } {4} \bigg( y(x^2 - z^2)\;\mathrm{ln}(\frac{y+\sqrt{ {x^2 + y^2 + z^2}}}{\sqrt{x^2 + z^2}}\;)\\
-&\ \ \ \ \ \ \ \ \ +x(y^2-z^2)\; \mathrm{ln}(\frac{x+\sqrt{ {x^2 + y^2 + z^2}}}{\sqrt{y^2 + z^2}}\;)  \bigg)\\ 
-&- \left. \frac {\sqrt{\pi} } {2}x \;y\;z\;\mathrm{tan^{-1}}(\frac{x\;y}{z\;\sqrt{x^2+y^2 + z^2}} ) \right]
-
-\end{array}
+\begin{split}
+I&=\sum_{i,j,k,l=0}^1 A_{i,j,k,l}\bigg[\frac {\sqrt{\pi} } {12} (-x^2-y^2+2\;z^2)\sqrt{x^2 + y^2 + z^2}   \\
+& + \frac {\sqrt{\pi} } {4}  y\;(x^2 - z^2)\;\mathrm{ln}\Big(\frac{y+\sqrt{ {x^2 + y^2 + z^2}}}{\sqrt{x^2 + z^2}}\;\Big) \\
+& + \frac {\sqrt{\pi} } {4} x\;(y^2-z^2)\; \mathrm{ln}\Big(\frac{x+\sqrt{ {x^2 + y^2 + z^2}}}{\sqrt{y^2 + z^2}}\;  \Big)\\ 
+&- \frac {\sqrt{\pi} } {2}x \;y\;z\;\mathrm{tan^{-1}}(\frac{x\;y}{z\;\sqrt{x^2+y^2 + z^2}} ) \bigg]
+\end{split}
 \end{equation}
 
 In this paper, we prefer to use the hyperbolic form of formula, which introduced in eq(17).
 In the case that two segments are coplanar, mutual coupling obtains by taking the limit of equation(17) when $z$ goes to zero.
 \begin{equation}\label {eq:19}
-\begin{array}{l}
-I_{coplanar}=\sum_{i,j,k,l=0}^1 A_{i,j,k,l}\left[\frac {\sqrt{\pi} } {12} \left((-x^2-y^2)\sqrt{x^2 + y^2} \right) \right. \\
-
- + \left. \frac {\sqrt{\pi} } {4} \left( y(x^2 )\;\mathrm{sinh^{-1}}(\frac{y}{x })+x(y^2)\;\mathrm{sinh^{-1}}(\frac{x}{y})  \right) \right]
-\end{array}
+\begin{split}
+I_{coplanar}=\sum_{i,j,k,l=0}^1  A_{i,j,k,l} \bigg[  \frac {\sqrt{\pi} } {12} \Big((-x^2-y^2)\sqrt{x^2 + y^2} \Big)\ + \\
+ \frac {\sqrt{\pi} } {4} \Big( y(x^2 )\;\mathrm{sinh^{-1}}(\frac{y}{x })+x(y^2)\;\mathrm{sinh^{-1}}(\frac{x}{y}) \Big) \bigg]
+\end{split}
 \end{equation}
 
 Implementation of this formula needs special attention to the cases in which any denominator of fractions becomes zero. Easily each term, involving such fractions goes to zero and can be omitted in calculations.
@@ -235,10 +234,10 @@ Implementation of this formula needs special attention to the cases in which any
 And finally, the self-coupling of a rectangular segment takes this form.
 
 \begin{equation}\label {eq:20}
-\begin{array}{l}
-I_{SC} = \frac {\sqrt{\pi} } {3} (x^3+y^3)
-+ \frac {\sqrt{\pi} } {3} \left((-x^2-y^2) \sqrt{x^2 + y^2} \right)\nonumber \\ +\sqrt{\pi} \left( y(x^2 )\;\mathrm{sinh^{-1}}(\frac{y}{x})+x(y^2)\;\mathrm{sinh^{-1}}(\frac{x}{y})  \right)
-\end{array}
+\begin {split}
+I_{SC} = \frac {\sqrt{\pi} } {3} (x^3+y^3) 
++ \frac {\sqrt{\pi} } {3} \left((-x^2-y^2) \sqrt{x^2 + y^2}\ \right) \\ +\sqrt{\pi} \left( y(x^2 )\;\mathrm{sinh^{-1}}(\frac{y}{x})+x(y^2)\;\mathrm{sinh^{-1}}(\frac{x}{y})  \right)
+\end {split}
 \end{equation}
 Now x and y are length and width of rectangular region.
 
@@ -256,34 +255,30 @@ where $d _{ij}$ is
 d_{ij} = \sqrt{(x_i-x_j)^2 + (y_i-y_c)^2 + (z_c - z_j)^2}
 \end{equation} 
 Where $z_c$ and $y_c$ are constants in integration. using integral transform utilized for parallel segments, primitive function of quadraple integral can be obtained.
-\begin{eqnarray}
+\begin{equation}
 \label {eq23}
-\begin{array}{lll}
-
-J = \frac{\pi\sqrt{\pi}\;x\; \mathrm {erf}(u x)\; \mathrm {erf}(u y)\; \mathrm {erf}(u z)}{8u^3}\\
-+\; \frac{\pi e^{-u^2 x^2} \mathrm{erf}(u y)\; \mathrm{erf}(u z)}{8u^4}
-\end{array}
-\end{eqnarray}
+\begin{split}
+J = &\frac{\pi\sqrt{\pi}\;x\; \mathrm {erf}(u x)\; \mathrm {erf}(u y)\; \mathrm {erf}(u z)}{8u^3}\\
++\; &\frac{\pi e^{-u^2 x^2} \mathrm{erf}(u y)\; \mathrm{erf}(u z)}{8u^4}
+\end{split}
+\end{equation}
 %------------
 Where $x = x_i - x_j$ , $y = y - y_j$ and $z = x_i - x_j$\ .
 And finally coupling coefficient of two perpendicular plate is obtained.
+
 \begin{equation}\label {eq:24}
-\begin{array}{ll}
+\begin{split}
 I& = \sum_{i,j,k,l=0}^1 A_{i,j,k,l}\\
 &  \bigg[ -\frac {\sqrt{\pi} } {6} \left((y\; z)\sqrt{x^2 + y^2 + z^2} \right) \\
-
 & +\  \frac {\sqrt{\pi} } {12} \bigg( z(3x^2 - z^2)\;\mathrm{sinh^{-1}}(\frac{y}{\sqrt{x^2 + z^2}}) \bigg)\\
 & +\  \frac {\sqrt{\pi} } {12} \bigg( y(3x^2 - y^2)\;\mathrm{sinh^{-1}}(\frac{z}{\sqrt{x^2 + y^2}}) \bigg)\\
 & +\  \frac {\sqrt{\pi} } {2} \bigg( x\; y\; z\;\mathrm{sinh^{-1}}(\frac{x}{\sqrt{y^2 + z^2}}) \bigg)\\
 &-  \frac {\sqrt{\pi} } {4}\;x \;z^2\;\mathrm{tan^{-1}}(\frac{x\;y}{z\;\sqrt{x^2+y^2 + z^2}})\\
-
 &-  \frac {\sqrt{\pi} } {4}\;x \;y^2\;\mathrm{tan^{-1}}(\frac{x\;z}{y\;\sqrt{x^2+y^2 + z^2}})\\
 &-  \frac {\sqrt{\pi} } {12}\;x^3\;\mathrm{tan^{-1}}(\frac{y\;z}{x\;\sqrt{x^2+y^2 + z^2}})\bigg]
-
-% @@@@@@@@@@@
-
-\end{array}
+\end{split}
 \end{equation}
+
 Now in above expressions $x = a_i - c_j$ , $y = b_k - y_c\ $ and $z = z_c - d_l$.
 %------------ S E C T I O N   F I V E
 \section{Results}
