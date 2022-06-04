@@ -1,32 +1,28 @@
-%\documentclass{elsarticle}
 \documentclass[final,5p,times,twocolumn]{elsarticle}
 
-%\usepackage{lipsum}
 \usepackage{lineno,hyperref}
-\modulolinenumbers[5]
+
 \usepackage{lipsum}
 \usepackage{amsmath}
-
-
+\usepackage{natbib}
 
 
 \bibliographystyle{elsarticle-num}
 %%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
-
 \begin{frontmatter}
 
 \title{Precise Calculation of Electrical Capacitance by means of Quadruple Integrals in  Method of Moments Technique}
 
 
-%% Group authors per affiliation:
+
 \author{Saeed Sarkarati\textsuperscript{a}, Mohammad Mehdi Tehranchi\textsuperscript{a,b}, Esfandiar Mehrshahi\textsuperscript{c}}
 \address{\textsuperscript{a}Laser and Plasma Research Institute, Shahid Beheshti University, Tehran, Iran}
 \address{\textsuperscript{b}Department of Physics , Shahid Beheshti University, Tehran, Iran}
 \address{\textsuperscript{c}Department of Electrical Engineering, Shahid Beheshti University, Tehran, Iran}
 
-%% or include affiliations in footnotes:
+
 
 
 \begin{abstract}
@@ -40,7 +36,6 @@ Capacitance Calculation\sep Method of Moments\sep Capacitance Imaging
 
 \end{frontmatter}
 
-\linenumbers
 
 \section{Introduction}
 
@@ -323,5 +318,5 @@ This chart shows not only good results in fine segmentation but also acceptable 
 \section{conclusion}
 In this paper, we have introduced neat formulas for extracting coupling coefficients in the MOM connection matrix. We have used these formulas for obtaining coupling coefficients. Then we used MOM to obtain electric capacitance of parallel air-gapped capacitor and capacitance of the unit cube. Electric capacitance versus the number of segmentation is investigated. We showed that even in very coarse segmentation of boundaries, very good results can be obtained from MOM. So it can be used for achieving the solution of the "forward problem" when you need a quick and accurate method.
 \section*{References}
-\bibliography{sarkarati-tehranchi-mehrshahi.bib}
+\bibliography{sarkarati.bib}
 \end{document}

@@ -1,0 +1,244 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{Dubal2016}
+D.~Dubal, Y.~Wu, R.~Holze, Supercapacitors: from the leyden jar to electric
+  busses, ChemTexts 2 (2016) 1--19.
+
+\bibitem{Rahman2009}
+M.~{Rahman}, S.~{Abbas}, S.~{Chowdhury}, A simple capacitance calculation
+  formula for mems capacitive type sensors with square membranes, in: 2009
+  Joint IEEE North-East Workshop on Circuits and Systems and TAISA Conference,
+  2009, pp. 1--4.
+
+\bibitem{Diamond2006}
+G.~Diamond, D.~Hutchins, A new capacitive imaging technique for ndt, in:
+  European Conference on NDT, 25-29 September, Berlin, Technical University of
+  Dresden, 2006, pp. 1--8.
+
+\bibitem{Ma2020}
+G.~Ma, M.~Soleimani, \href{https://doi.org/10.1038/s41598-020-68432-1}{A
+  versatile 4d capacitive imaging array: a touchless skin and an
+  obstacle-avoidance sensor for robotic applications}, Scientific Reports
+  10~(1) (2020) 11525.
+\newblock \href {http://dx.doi.org/10.1038/s41598-020-68432-1}
+  {\path{doi:10.1038/s41598-020-68432-1}}.
+\newline\urlprefix\url{https://doi.org/10.1038/s41598-020-68432-1}
+
+\bibitem{Liu2017}
+Z.~{Liu}, H.~{Liu}, Experimenting capacitive sensing technique for structural
+  integrity assessment, in: 2017 IEEE International Conference on Industrial
+  Technology (ICIT), 2017, pp. 922--927.
+
+\bibitem{Muttakin2018}
+I.~Muttakin, M.~Soleimani, Direct capacitance measurement for tomographic
+  imaging of metallic objects, 2018, 9th World Congress in industrial process
+  tomography, WCIPT9, Sep 2018 ; Conference date: 02-09-2018.
+
+\bibitem{Dutta2008}
+S.~M. Dutta, Magnetic flux leakage sensing: The forward and inverse problems.,
+  Ph.D. thesis (2008).
+
+\bibitem{Izquierdo2009}
+S.~C. Izquierdo, J.~M.~B. Barrachina, C.~S.~C. Penuelas, F.~C.~S. ee,
+  Capacitance evaluation on parallel-plate capacitors by means of finite
+  element analysis, 2009, p. 613, renewable Energy and Power Quality.
+
+\bibitem{LeCoZ1992}
+Y.~{Le Coz}, R.~{Iverson},
+  \href{http://www.sciencedirect.com/science/article/pii/0038110192903327}{A
+  stochastic algorithm for high speed capacitance extraction in integrated
+  circuits}, Solid-State Electronics 35~(7) (1992) 1005 -- 1012.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/0038-1101(92)90332-7}
+  {\path{doi:https://doi.org/10.1016/0038-1101(92)90332-7}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/0038110192903327}
+
+\bibitem{Song2020}
+M.~{Song}, M.~{Yang}, W.~{Yu}, Floating random walk based capacitance solver
+  for vlsi structures with non-stratified dielectrics, in: 2020 Design,
+  Automation Test in Europe Conference Exhibition (DATE), 2020, pp. 1133--1138.
+
+\bibitem{Bai2004}
+E.-W. Bai, K.~E. Lonngren,
+  \href{http://www.sciencedirect.com/science/article/pii/S0045790604000035}{Capacitors
+  and the method of moments}, Computers \& Electrical Engineering 30~(3) (2004)
+  223 -- 229.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/j.compeleceng.2002.10.002}
+  {\path{doi:https://doi.org/10.1016/j.compeleceng.2002.10.002}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0045790604000035}
+
+\bibitem{Liao2004}
+{Yunn-Shiuan Liao}, {Shiang-Woei Chyuan}, {Jeng-Tzong Chen}, Fem versus bem,
+  IEEE Circuits and Devices Magazine 20~(5) (2004) 25--34.
+
+\bibitem{Kolundzija1998}
+B.~M. {Kolundzija}, V.~V. {Petrovic}, Comparison of mom/sie, mom/vie and fem
+  based on topological analysis of two canonical problems, in: IEEE Antennas
+  and Propagation Society International Symposium. 1998 Digest. Antennas:
+  Gateways to the Global Network. Held in conjunction with: USNC/URSI National
+  Radio Science Meeting (Cat. No.98CH36, Vol.~1, 1998, pp. 274--277 vol.1.
+
+\bibitem{Tao2010}
+T.~Li, \href{https://digitalcommons.wpi.edu/etd-theses/86}{3d capacitance
+  extraction with the method of moments}, Master's thesis, Worcester
+  Polytechnic Institute (1 2010).
+\newline\urlprefix\url{https://digitalcommons.wpi.edu/etd-theses/86}
+
+\bibitem{Arcioni1997}
+P.~{Arcioni}, M.~{Bressan}, L.~{Perregrini}, On the evaluation of the double
+  surface integrals arising in the application of the boundary integral method
+  to 3-d problems, IEEE Transactions on Microwave Theory and Techniques 45~(3)
+  (1997) 436--439.
+
+\bibitem{Eibert1995}
+T.~F. {Eibert}, V.~{Hansen}, On the calculation of potential integrals for
+  linear source distributions on triangular domains, IEEE Transactions on
+  Antennas and Propagation 43~(12) (1995) 1499--1502.
+
+\bibitem{Wilton1984}
+D.~{Wilton}, S.~{Rao}, A.~{Glisson}, D.~{Schaubert}, O.~{Al-Bundak},
+  C.~{Butler}, Potential integrals for uniform and linear source distributions
+  on polygonal and polyhedral domains, IEEE Transactions on Antennas and
+  Propagation 32~(3) (1984) 276--281.
+
+\bibitem{Graglia1993}
+R.~D. {Graglia}, On the numerical integration of the linear shape functions
+  times the 3-d green's function or its gradient on a plane triangle, IEEE
+  Transactions on Antennas and Propagation 41~(10) (1993) 1448--1455.
+
+\bibitem{Rao1979}
+S.~{Rao}, A.~{Glisson}, D.~{Wilton}, B.~{Vidula}, A simple numerical solution
+  procedure for statics problems involving arbitrary-shaped surfaces, IEEE
+  Transactions on Antennas and Propagation 27~(5) (1979) 604--608.
+
+\bibitem{Mishra2009}
+M.~{Mishra}, N.~{Gupta}, A.~{Dubey}, S.~{Shekhar},
+  \href{http://www.jpier.org/PIER/pier.php?paper=09011310}{Application of quasi
+  monte carlo integration technique in efficient capacitance computation},
+  Progress In Electromagnetics Research 90 (2009) 309--322.
+\newblock \href {http://dx.doi.org/10.2528/PIER09011310}
+  {\path{doi:10.2528/PIER09011310}}.
+\newline\urlprefix\url{http://www.jpier.org/PIER/pier.php?paper=09011310}
+
+\bibitem{Ayatollahi2003}
+M.~{Ayatollahi}, S.~{Safavi-Naeini}, An efficient matrix filling algorithm for
+  the mom using the plane wave expansion of the green's function, in: CCECE
+  2003 - Canadian Conference on Electrical and Computer Engineering. Toward a
+  Caring and Humane Technology (Cat. No.03CH37436), Vol.~3, 2003, pp.
+  1437--1440 vol.3.
+
+\bibitem{Zhang2016}
+Z.~{Zhang}, Y.~{Zhao}, Q.~{Cai}, Y.~{Zheng}, L.~{Gu}, Z.~{Nie}, An efficient
+  matrix fill-in scheme for surface integral equation with higher order
+  hierarchical vector basis functions, in: 2016 IEEE 5th Asia-Pacific
+  Conference on Antennas and Propagation (APCAP), 2016, pp. 177--178.
+
+\bibitem{Hu2018}
+J.~Hu, W.~Zhang, T.-T. Qiu, X.~Lan,
+  \href{https://doi.org/10.1155/2018/3453495}{Matrix generation by first-order
+  taylor expansion in a localized manner}, International Journal of Antennas
+  and Propagation 2018 (2018) 3453495.
+\newblock \href {http://dx.doi.org/10.1155/2018/3453495}
+  {\path{doi:10.1155/2018/3453495}}.
+\newline\urlprefix\url{https://doi.org/10.1155/2018/3453495}
+
+\bibitem{See2009}
+K.~Y. {See}, E.~K. {Chua}, y.~. . d. . P. u. .~h. Z.~{Liu} title = {Accurate
+  and Efficient Evaluation of MoM Matrix Based on a Generalized Analytical
+  Approach"} journal = {Progress In Electromagnetics Research}~volume =~{94},
+  pages =~{367-382}.
+
+\bibitem{Kolundzija2012}
+B.~M. {Kolundzija}, D.~P. {Zoric}, Efficient evaluation of mom matrix elements
+  using cpu and/or gpu, in: 2012 6th European Conference on Antennas and
+  Propagation (EUCAP), 2012, pp. 702--706.
+
+\bibitem{Manic2015}
+A.~Manic, \href{http://hdl.handle.net/10217/170428}{Fast and accurate
+  double-higher-order method of moments accelerated by diakoptic domain
+  decomposition and memory efficient parallelization for high performance
+  computing systems}, Ph.D. thesis, Colorado State University (2015).
+\newline\urlprefix\url{http://hdl.handle.net/10217/170428}
+
+\bibitem{Cavendish1967}
+H.~Cavendish, J.~C. Maxwell,
+  \href{https://archive.org/details/electricalresear00caveuoft/page/426}{The
+  electrical researches of the Honourable Henry Cavendish}, London Cass, 1967.
+\newline\urlprefix\url{https://archive.org/details/electricalresear00caveuoft/page/426}
+
+\bibitem{Zhou1993}
+\href{https://doi.org/10.1007/978-3-642-50319-1_8}{Surface Charge Simulation
+  Method (SSM). In: Numerical Analysis of Electromagnetic Fields. Electric
+  Energy Systems and Engineering Series.}, Springer, Berlin, Heidelberg, 1993.
+\newline\urlprefix\url{https://doi.org/10.1007/978-3-642-50319-1_8}
+
+\bibitem{Nishiyama1994}
+H.~{Nishiyama}, M.~{Nakamura}, Form and capacitance of parallel-plate
+  capacitors, IEEE Transactions on Components, Packaging, and Manufacturing
+  Technology: Part A 17~(3) (1994) 477--484.
+
+\bibitem{Lopez2009}
+S.~{Lopez-Pena}, J.~R. {Mosig}, Analytical evaluation of the quadruple static
+  potential integrals on rectangular domains to solve 3-d electromagnetic
+  problems, IEEE Transactions on Magnetics 45~(3) (2009) 1320--1323.
+
+\bibitem{Maccarrone2017}
+F.~Maccarrone, G.~Paffuti,
+  \href{http://www.sciencedirect.com/science/article/pii/S0304388617301869}{Capacitance
+  and forces for two square electrodes}, Journal of Electrostatics 89 (2017) 20
+  -- 29.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/j.elstat.2017.06.007}
+  {\path{doi:https://doi.org/10.1016/j.elstat.2017.06.007}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0304388617301869}
+
+\bibitem{Song2011}
+Z.~F. Song, F.~Duval, D.~Su, A.~Louis, Stable partial inductance calculation
+  for partial element equivalent circuit modeling, Applied Computational
+  Electromagnetics Society (ACES) Journal 25~(6) (2011) 738 -- 749.
+
+\bibitem{Ciftja2010}
+O.~Ciftja,
+  \href{http://www.sciencedirect.com/science/article/pii/S0375960109015369}{Coulomb
+  self-energy and electrostatic potential of a uniformly charged square in two
+  dimensions}, Physics Letters A 374~(7) (2010) 981 -- 983.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/j.physleta.2009.12.017}
+  {\path{doi:https://doi.org/10.1016/j.physleta.2009.12.017}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0375960109015369}
+
+\bibitem{Wolfram}
+\href{http://www.wolframalpha.com}{Wolfromalpha computational intelligence.}
+\newline\urlprefix\url{http://www.wolframalpha.com}
+
+\bibitem{Reitan1951}
+D.~K. Reitan, T.~J. Higgins,
+  \href{https://aip.scitation.org/doi/10.1063/1.1699929}{Calculation of the
+  electrical capacitance of a cube}, Journal of Applied Physics 22~(2) (1951)
+  223 -- 226.
+\newblock \href {http://dx.doi.org/https://doi.org/10.1063/1.1699929}
+  {\path{doi:https://doi.org/10.1063/1.1699929}}.
+\newline\urlprefix\url{https://aip.scitation.org/doi/10.1063/1.1699929}
+
+\bibitem{Hwang2010}
+C.-O. Hwang, M.~Mascagni, T.~Won,
+  \href{http://www.sciencedirect.com/science/article/pii/S0378475408001274}{Monte
+  carlo methods for computing the capacitance of the unit cube}, Mathematics
+  and Computers in Simulation 80~(6) (2010) 1089 -- 1095, fifth IMACS Seminar
+  on Monte Carlo Methods Applications of Computer Algebra 2007 (ACA 2007)
+  special session on Nonstandard Applications of Computer Algebra Computational
+  Biomechanics and Biology, a collection of papers presented at the 1st IMACS
+  International Conference on the Computational Biomechanics and Biology ICCBB
+  2007.
+\newblock \href
+  {http://dx.doi.org/https://doi.org/10.1016/j.matcom.2008.03.003}
+  {\path{doi:https://doi.org/10.1016/j.matcom.2008.03.003}}.
+\newline\urlprefix\url{http://www.sciencedirect.com/science/article/pii/S0378475408001274}
+
+\end{thebibliography}

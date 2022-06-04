@@ -1,0 +1,86 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: sarkarati.aux
+The style file: elsarticle-num.bst
+Database file #1: sarkarati.bib.bib
+I was expecting a `,' or a `}'---line 131 of file sarkarati.bib.bib
+ :  
+ :  school = {Rice University},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 501 of file sarkarati.bib.bib
+ : 
+ : @phdthesis {Manic2015,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 547 of file sarkarati.bib.bib
+ : 
+ : pages = "426-427"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `)'---line 567 of file sarkarati.bib.bib
+ : 
+ : }
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "Wolfram" isn't style-file defined
+--line 717 of file sarkarati.bib.bib
+Warning--empty booktitle in Muttakin2018
+Warning--empty pages in Muttakin2018
+Warning--empty school in Dutta2008
+Warning--empty booktitle in Izquierdo2009
+Too many commas in name 3 of "K. Y. {See} and E. K. {Chua} and Z. {Liu} title = {Accurate and Efficient Evaluation of MoM Matrix Based on a Generalized Analytical Approach"} journal = {Progress In Electromagnetics Research} volume = {94}, pages = {367-382}, year = {2009}, doi = {10.2528/PIER09063002}, url = {http://www.jpier.org/PIER/pier.php?paper=09063002}" for entry See2009
+while executing---line 1495 of file elsarticle-num.bst
+Too many commas in name 3 of "K. Y. {See} and E. K. {Chua} and Z. {Liu} title = {Accurate and Efficient Evaluation of MoM Matrix Based on a Generalized Analytical Approach"} journal = {Progress In Electromagnetics Research} volume = {94}, pages = {367-382}, year = {2009}, doi = {10.2528/PIER09063002}, url = {http://www.jpier.org/PIER/pier.php?paper=09063002}" for entry See2009
+while executing---line 1495 of file elsarticle-num.bst
+Too many commas in name 3 of "K. Y. {See} and E. K. {Chua} and Z. {Liu} title = {Accurate and Efficient Evaluation of MoM Matrix Based on a Generalized Analytical Approach"} journal = {Progress In Electromagnetics Research} volume = {94}, pages = {367-382}, year = {2009}, doi = {10.2528/PIER09063002}, url = {http://www.jpier.org/PIER/pier.php?paper=09063002}" for entry See2009
+while executing---line 1495 of file elsarticle-num.bst
+Too many commas in name 3 of "K. Y. {See} and E. K. {Chua} and Z. {Liu} title = {Accurate and Efficient Evaluation of MoM Matrix Based on a Generalized Analytical Approach"} journal = {Progress In Electromagnetics Research} volume = {94}, pages = {367-382}, year = {2009}, doi = {10.2528/PIER09063002}, url = {http://www.jpier.org/PIER/pier.php?paper=09063002}" for entry See2009
+while executing---line 1495 of file elsarticle-num.bst
+Warning--empty title in See2009
+Warning--empty journal in See2009
+Warning--empty chapter and pages in Cavendish1967
+Warning--empty pages in Cavendish1967
+Warning--empty author and editor in Zhou1993
+You've used 36 entries,
+            2937 wiz_defined-function locations,
+            937 strings with 13648 characters,
+and the built_in function-call counts, 11908 in all, are:
+= -- 1139
+> -- 300
+< -- 11
++ -- 124
+- -- 88
+* -- 861
+:= -- 1538
+add.period$ -- 45
+call.type$ -- 36
+change.case$ -- 36
+chr.to.int$ -- 0
+cite$ -- 45
+duplicate$ -- 417
+empty$ -- 1412
+format.name$ -- 117
+if$ -- 3175
+int.to.chr$ -- 0
+int.to.str$ -- 36
+missing$ -- 33
+newline$ -- 139
+num.names$ -- 34
+pop$ -- 256
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 769
+stack$ -- 0
+substring$ -- 704
+swap$ -- 131
+text.length$ -- 11
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 9
+while$ -- 71
+width$ -- 38
+write$ -- 332
+(There were 8 error messages)
