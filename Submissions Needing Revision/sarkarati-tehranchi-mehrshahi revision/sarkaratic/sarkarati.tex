@@ -5,6 +5,8 @@
 \usepackage{lipsum}
 \usepackage{amsmath}
 \usepackage{natbib}
+\usepackage{xcolor}
+
 
 
 \bibliographystyle{elsarticle-num}
@@ -38,7 +40,6 @@ Capacitance Calculation\sep Method of Moments\sep Capacitance Imaging
 
 
 \section{Introduction}
-
 Accurately calculating of electric capacitance from early water-filled Leyden jar up to modern supercapacitors has been a challenging task for scientists and researchers. \cite{Dubal2016}. The demand for fast capacitance extraction techniques increases because the usage of capacitors in sensing systems spreads widely \cite{Rahman2009}.
 
 The desired characteristics of examined objects can be obtained by inverse problem analysis of measured parameters. In systems based on capacitive sensing such as the "capacitive imaging method", the material is scanned by two electrodes, and electrical capacitance between electrodes is recorded in each position \cite{Diamond2006, Ma2020}. And it can be used to determine the size and location of defects \cite{Liu2017}. The capacitive imaging method also can be utilized on metallic objects and is used for making a surface image of substance as an inverse problem \cite{Muttakin2018}.
@@ -74,7 +75,8 @@ He divided the square by 36 equal squares and presumed uniform charge density fo
 \end{figure}
 He then calculated the electric charge of each segment and consequently electric capacitance of the big square.
 
-Generally to calculate the electric capacitance of a parallel plate capacitor, at first two constant voltages, are proposed for two plates (usually 1V and -1V). Now each plate must be divided into square segments. Charge density of each segment is assumed to be constant for each segment. The electric potential of each segment must be equal to its plate. On the other hand potential of each segment can be calculated using the electric charge of all segments and coupling coefficients.
+Generally to calculate the electric capacitance of a parallel plate capacitor, at first two constant voltages, are proposed for two plates (usually 1V and -1V). Now each plate must be divided into square segments. \textcolor{red}{
+ Charge density of each segment is assumed to be constant for each segment.} The electric potential of each segment must be equal to its plate. On the other hand potential of each segment can be calculated using the electric charge of all segments and coupling coefficients.
 \begin{equation}
 \label{eq1}
 V_i = \sum_j P_{ij} Q_j
@@ -97,20 +99,26 @@ where $d_{ij}$ is the distance between centers of two segments.
 In literature, this approximation is used in a method called "surface charge simulation method"\cite {Zhou1993} although this method can be categorized in varieties of MOM. This formula is not useful for obtaining the self-coupling coefficient. Self-coupling is calculated by integrating over the area to find the mean distance of all the points of area to its center.
 \begin{equation}
 \label{eq4}
+\textcolor{red}{
 P_{ii} = \frac 1 {S_i} \int_{x \in S_i} \int_{y \in S_i} \frac {dx\  dy}{4 \pi \epsilon_0 \sqrt{(x-x_{ci})^2 + (y-y_{ci})^2}}
+}
 \end{equation}
 Where $(x_{ci}, y_{ci})$ is the center point of domain i and $S_i $ is the segment area.
 For less approximate results in calculating the capacity, it is better to use a double integral formula, not only for the self-coupling but also for the mutual coupling. It leads us to double integral formulation.
 \begin{equation}
 \label{eq5}
+\textcolor{red}{
 P_{ij} = \frac 1 {S_i}\int_{x \in S_i} \int_{y \in S_i} \frac {dx\  dy}{4 \pi \epsilon_0 \sqrt{(x-x_{cj})^2 + (y-y_{cj})^2+ z^2}}
+}
 \end{equation}
 Two domains are assumed to be parallel. $z$ is the distance of two domains and is constant over integration. The integral must be calculated over domain i, and the distance of each point to the center of other domains is considered in this formula. These integrals can be calculated analytically and have been applied to find the capacitance of parallel plate capacitors by Nishiyama and Nakamura\cite {Nishiyama1994}.
 
 Obviously this formula is not suitable where two domains are relatively close according to their dimensions. In this case, the center of one domain can not be proposed as representative of all points. Really it is better to find all mutual distances between points of two segments. It can be done by using quadruple integral instead of double integral.
 \begin{equation}
 \label {eq6}
+\textcolor{red}{
 P_{ij} = \frac 1 {S_i S_j}\iint\limits_{x_i, y_i \in S_i}\ \  \iint\limits_{x_j, y_j \in S_j}  \frac{dx_i dy_i dx_j dy_j}{4 \pi \epsilon_0 d_{ij}}
+}
 \end{equation} 
 where $d _{ij}$ is 
 \begin{equation}
@@ -128,14 +136,18 @@ To perform integral in Equation(6) this integral transformation can be used\cite
 And Equation(6) can be rewritten in this form.
 \begin{equation}
 \label {eq9}
+\textcolor{red}{
 P_{ij} = \frac 2 {\sqrt{\pi} S_i S_j}\int_0^{\infty}\iint\limits_{x_i, y_i \in S_i}\ \  \iint\limits_{x_j, y_j \in S_j} \\ \frac{e^{-u^2 d_{ij}^2 } dx_i dy_i dx_j dy_j}{4 \pi \epsilon_0 } du
+}
 \end{equation}
 
 For simplicity, we remove constants from the formula.
 
 \begin{equation}
 \label {eq10}
+\textcolor{red}{
 I = \int_0^{\infty}\iint\limits_{x_i, y_i \in S_i}\ \  \iint\limits_{x_j, y_j \in S_j}  e^{-u^2 d_{ij}^2} dx_i dy_i dx_j dy_j du
+}
 \end{equation}
 
 There is no way to find a primitive function of $e^{-u^2 d_{ij}^2}$ over these five integrals, but primitive function over four inner integrals can be found. Assume J as the primitive function of the quadruple integral.
